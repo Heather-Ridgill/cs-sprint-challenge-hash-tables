@@ -1,8 +1,28 @@
+# Intersections of Multiple Lists
+
+# Find the intersection between multiple lists of integers.
+
+# Do not use numpy or sets to solve this; use `dict` or hashtables,
+# please.
+
+
 def intersection(arrays):
-    """
-    YOUR CODE HERE
-    """
-    # Your code here
+    cache = {}
+    # return a list called result
+    result = []
+    # loop through array
+    for array in arrays:
+        for number in array:
+            # check if the number is in the cache
+            if number in cache:
+                # move through array
+                cache[number] += 1
+                # if the index is the same as len
+                if cache[number] == len(arrays):
+                    result.append(number)
+                   
+            else:
+                cache[number] = 1
 
     return result
 
