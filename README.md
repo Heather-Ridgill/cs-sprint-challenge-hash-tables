@@ -21,14 +21,24 @@ Commit your code regularly and meaningfully. This practice helps both you (in ca
 ## Interview Questions
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your answers beforehand.
-
+************************************
 1. Hashing functions
+    Takes and input or "string" and return an integer, Convert the string into an integer using the .encode() method. 
 2. Collision resolution
+    When 2hash items want to go into the same slot - have to have a method of placing the second hash so it will then try to find the next open slot
 3. Performance of basic hash table operations
+    The average good hash function is usually 0(1 + a). Hash tables are used to implement Insert and Find operations in constant average time. This is the prime purpose of hashing
 4. Load factor
+    Load Factor = the # of items in the hash table divided by the total number of slots. When the hash table increases so will the likelihood of a collision! 
 5. Automatic resizing
+    One way to avoid 'collision' is to have automatic resizing. When there arents enough slots within the hash table. 
 6. Various use cases for hash tables
-
+     1) Storing anything where you need access based on a non integer
+     2) Storage where insertion and access both need to be fast.
+     3) Storing anything where order does not matter but access speed does.
+     4) Sets can be represented through hash tables. Finding if an item is present or not is a lot faster than having to look through a list of 1,000,000 items.
+     
+************************************
 We expect you to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
 ## Instructions
